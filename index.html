@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>بنك الأسئلة</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="t1">بنك الأسئلة</h1>
+
+  <div id="app-container">
+    
+  <div id="welcome-message">
+    <h2 id="h1">أهلاً بك في تطبيق بنك الأسئلة! اختر حرف للبدء.</h2>
+  </div>
+
+  <div id="letter-selection">
+    <label for="letter">اختر الحرف:</label>
+    <select id="letter" onchange="filterQuestions()">
+      <option value="">اختر حرف</option>
+      <option value="ا">ا</option>
+      <option value="ب">ب</option>
+      <option value="ت">ت</option>
+      <option value="ث">ث</option>
+      <option value="ج">ج</option>
+      <option value="ح">ح</option>
+      <option value="خ">خ</option>
+      <option value="د">د</option>
+      <option value="ذ">ذ</option>
+      <option value="ر">ر</option>
+      <option value="ز">ز</option>
+      <option value="س">س</option>
+      <option value="ش">ش</option>
+      <option value="ص">ص</option>
+      <option value="ض">ض</option>
+      <option value="ط">ط</option>
+      <option value="ظ">ظ</option>
+      <option value="ع">ع</option>
+      <option value="غ">غ</option>
+      <option value="ف">ف</option>
+      <option value="ق">ق</option>
+      <option value="ك">ك</option>
+      <option value="ل">ل</option>
+      <option value="م">م</option>
+      <option value="ن">ن</option>
+      <option value="هـ">ه</option>
+      <option value="و">و</option>
+      <option value="ي">ي</option>
+    </select>
+  </div>
+
+<div id="question-container" style="display:none;">
+  <h2 id="question"></h2>
+  <p id="answer" style="display:none;"></p>
+  <button id="show-answer-btn" onclick="showAnswer()">إظهار الإجابة</button>
+  <button id="change-question-btn" onclick="changeQuestion()">تغيير السؤال</button>
+</div>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>

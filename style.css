@@ -1,0 +1,78 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #3f3f3f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+.t1 {
+  color: #333;
+  position: fixed;
+  top: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-shadow: white 1px 1px 2px, white -1px -1px 2px, white -1px 1px 2px, white 1px -1px 2px;
+}
+#app-container {
+  background-color: rgb(87, 87, 87);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+}
+#letter{
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: none;
+    background-color: #8b8b8b;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#letter-selection label {
+  margin: 20px 0;
+  color: #ffffff;
+}
+
+#question-container h2 {
+  margin: 20px 0 10px 0;
+}
+
+#question-container p {
+  margin: 10px 0;
+}
+
+button {
+  margin: 10px 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  background-color: #8b8b8b;
+  color: rgb(255, 255, 255);
+  transition: background 0.3s;
+}
+h2 {
+  color: #fff;
+}
+button:hover {
+  background-color: #505050;
+}
+#answer {
+  color: #000000;          /* لون النص */
+  font-size: 20px;          /* حجم الخط */
+  font-weight: bold;        /* سمك الخط */
+  text-shadow: 1px 1px 2px rgb(153, 153, 153); /* تأثير ظل للنص */
+  padding: 10px;            /* مساحة داخلية */
+  border: 2px solid #008500; /* إطار حول الإجابة */
+  border-radius: 5px;       /* تدوير الزوايا */
+  background-color: #57a357; /* خلفية خفيفة */
+  display: none;            /* مخفي في البداية */
+}
